@@ -1,0 +1,27 @@
+browser->server: https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML-code
+
+note over browser:
+Here the browser starts executing 
+the html code
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+note over server:
+The Server responds to URL send
+by the browser
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "Shadow", date: "2019-05-23" }, ...]
+
+note right of server:
+A single-page application is an app that 
+works inside a browser and does not require
+page reloading during use.
+
+end note 
