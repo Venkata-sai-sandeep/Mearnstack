@@ -1,0 +1,9 @@
+h1{
+ 	color:blue;
+	background-color:skyblue;
+}
+
+title {
+  	color:red;
+	font-sixe:large;
+}
